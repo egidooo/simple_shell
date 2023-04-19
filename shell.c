@@ -47,8 +47,9 @@ int main(int ac, char **argv)
 		token = strtok(NULL, delim);
 	}
 	argv[k] = NULL;
-	printf("%s\n", lineptr);
-	free(lineptr);
+	execmd(argv);
 	}
+	free(lineptr_cp);
+	free(lineptr);
 	return (0);
 }
