@@ -8,12 +8,13 @@
 
 void execmd(char **argv)
 {
-	char *comm = NULL;
+	char *command = NULL, *real_command = NULL;
 
 	if (argv)
 	{
-		comm = argv[0];
-		if (execve(comm, argv, NULL) == -1)
+		command = argv[0];
+		real_command = get_location(command);
+		if (execve(real_command, argv, NULL) == -1)
 		{
 			perror("error:");
 		}
