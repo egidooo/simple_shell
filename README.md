@@ -1,7 +1,7 @@
 C - Simple Shell
 
-this is the group peoject to built our own simple_shell
-we are ging to work on this project in a pair of two KWIZERA Egide and Hafsa Yussuf
-me Egide iam from Rwanda and my partner Hafsa is from Kenya
+This is our group project to build our own simple_shell.
+We are going to work on this project in a pair of two; Kwizera Egide and Hafsa Yussuf.
+Iam from Rwanda and my partner Hafsa is from Kenya.
 
 
