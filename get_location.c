@@ -2,7 +2,7 @@
 /**
  * get_location: get the location of the given command
  * @command: command wtitten in the shell
- * Return: NULL
+ * Return: 0
  */
 
 char *get_location(char *command)
