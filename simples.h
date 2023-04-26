@@ -14,7 +14,7 @@
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
-typedef struct info_s 
+typedef struct info_s
 {
 char **environ;
 char **argv;
