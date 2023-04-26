@@ -1,4 +1,10 @@
-#include "shell.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#define MAX_ARGS 10
+#define BUFFER_SIZE 1024
 /**
 * main - simple shell program entry point
 * Description: simple shell program written in C
@@ -8,9 +14,9 @@
 */
 int main(void)
 {
-pid_t process_id;
 char buffer[BUFFER_SIZE];
-char *args[MAXIMUM_ARGUEMENTS + 1];
+char *args[MAX_ARGS + 1];
+pid_t pid;
 while (1)
 {
 printf("alx_shell$ ");
@@ -21,22 +27,22 @@ printf("\n");
 exit(EXIT_SUCCESS);
 }
 buffer[strcspn(buffer, "\n")] = 0;
-process_id = fork();
-if (process_id == -1)
+pid = fork();
+if (pid == -1)
 {
 perror("fork");
 exit(EXIT_FAILURE);
 }
-else if (process_id == 0)
+else if (pid == 0)
 {
-int index = 0;
+int i = 0;
 char *token = strtok(buffer, " ");
-while (token != NULL && index < MAXIMUM_ARGUEMENTS)
+while (token != NULL && i < MAX_ARGS)
 {
-args[index++] = token;
+args[i++] = token;
 token = strtok(NULL, " ");
 }
-args[index] = NULL;
+args[i] = NULL;
 execvp(args[0], args);
 perror(args[0]);
 exit(EXIT_FAILURE);
@@ -44,7 +50,7 @@ exit(EXIT_FAILURE);
 else
 {
 int status;
-if (waitpid(process_id, &status, 0) == -1)
+if (waitpid(pid, &status, 0) == -1)
 {
 perror("waitpid");
 exit(EXIT_FAILURE);
