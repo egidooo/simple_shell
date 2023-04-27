@@ -1,4 +1,4 @@
-#include "simple_shell.h"
+#include "shell.h"
 /**
 *execute - Function that executes a command.
 *@args: Array of arguments.

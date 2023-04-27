@@ -2,8 +2,6 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include "shell.h"
-#include "lists.h"
-#include "main.h"
 /**
 * get_builtin - Get built-in function
 * @params: Pointer to the param_t struct containing command parameters

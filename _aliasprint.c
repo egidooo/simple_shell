@@ -1,7 +1,5 @@
 #include <stdlib.h>
 #include "shell.h"
-#include "main.h"
-#include "lists.h"
 /**
 * print_alias - prints the value of an alias, if it exists
 * @name: name of the alias to print

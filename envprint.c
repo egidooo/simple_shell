@@ -1,5 +1,3 @@
-#include "main.h"
-#include "lists.h"
 #include "shell.h"
 /**
 * _printenv - prints the environment

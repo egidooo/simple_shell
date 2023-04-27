@@ -1,4 +1,4 @@
-#include "simple_shell.h"
+#include "shell.h"
 /**
 *my_getline - Reads entire line from a stream and allocates memory.
 *@lineptr: A pointer to a buffer that will contain the read line

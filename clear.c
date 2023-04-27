@@ -1,4 +1,3 @@
-#include "main.h"
 #include "shell.h"
 /**
 * _clear - clears the terminal screen

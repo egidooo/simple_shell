@@ -1,4 +1,4 @@
-#include "simple_shell.h"
+#include "shell.h"
 /**
 * alias_builtin - Implements the alias builtin command
 * @args: An array of strings containing the command and its arguments
