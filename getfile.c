@@ -20,7 +20,7 @@ return (a);
 * @n: integer
 * Return: pointer to binary
 */
-char *get_binary(unsignedint n)
+char *get_binary(unsigned int n)
 {
 char *ptr = NULL;
 unsigned int i, num = 0, size = 0;
