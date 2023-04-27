@@ -6,12 +6,6 @@
  * Return: 0
  */
 
-=======
-* get_location: get the location of the given command
-* @command: command wtitten in the shell
-* Return: NULL
-*/
->>>>>>> c3fadc1a677dbc406dfb3a74b32da51cafd67f56
 char *get_location(char *command)
 {
 int command_length, directory_length;
