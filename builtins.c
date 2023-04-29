@@ -5,7 +5,7 @@
  * Return: exit with a given exit ststus
  */
 
-int _myexit(info_t *info)
+int _myexit(ino_t *info)
 {
 	int check;
 
@@ -32,7 +32,7 @@ int _myexit(info_t *info)
  *  @info: structure
  *  Return: always 0
  */
-int _mycd(info_t *info)
+int _mycd(info_t *ino_t)
 {
 	char *s, *direct, buffer[1024];
 	int chdirect_ret;
@@ -81,7 +81,7 @@ int _mycd(info_t *info)
  * @info: structure
  * Return: 0
  */
-int _myhelp(info_t *info)
+int _myhelp(ino_t *info)
 {
 	char **arg_array;
 
